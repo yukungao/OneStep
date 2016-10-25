@@ -2,9 +2,9 @@
 
 /**
 * @ngdoc overview
-* @name AniTheme
+* @name Akun
 * @description
-* # AniTheme
+* # Akun
 *
 * Main module of the application.
 */
@@ -19,7 +19,7 @@ angular
     'textAngular',
     'gridshore.c3js.chart',
     'angular-growl',
-    'growlNotifications',    
+    'growlNotifications',
     'angular-loading-bar',
     'angular-progress-button-styles',
     'pascalprecht.translate',
@@ -41,7 +41,7 @@ angular
           suffix: '.json'
         });
         $translateProvider.preferredLanguage('en');
-       
+
     })
     .config(function($stateProvider, $urlRouterProvider) {
 
@@ -112,24 +112,24 @@ angular
         url: '/form/elements',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/forms/elements.html?v='+window.app_version
-    }) 
+    })
     .state('components', {
         url: '/form/components',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/forms/components.html?v='+window.app_version
-    }) 
+    })
 
     .state('button', {
         url: '/ui-interface/button',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/button.html?v='+window.app_version
-    }) 
+    })
 
     .state('dropdown', {
         url: '/ui-interface/dropdown',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/dropdown.html?v='+window.app_version
-    }) 
+    })
     .state('other-elements', {
         url: '/ui-interface/other-elements',
         parent: 'dashboard',
@@ -150,29 +150,29 @@ angular
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/alert.html?v='+window.app_version,
         conntroller: 'AlertDemoCtrl'
-    })  
+    })
     .state('progressbars', {
         url: '/ui-interface/progressbars',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/progressbar.html?v='+window.app_version,
         conntroller: 'ProgressDemoCtrl'
-    })      
+    })
     .state('pagination', {
         url: '/ui-interface/pagination',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/pagination.html?v='+window.app_version,
         conntroller: 'PaginationDemoCtrl'
-    })  
+    })
     .state('chartjs', {
         url: '/charts/chart.js',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/charts/chartjs.html?v='+window.app_version
-    })  
+    })
     .state('c3chart', {
         url: '/charts/c3chart',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/charts/c3chart.html?v='+window.app_version
-    })      
+    })
     .state('calendar', {
         url: '/calendar',
         parent: 'dashboard',
